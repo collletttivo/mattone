@@ -1,0 +1,34 @@
+{
+glyphname = Uogonek;
+kernLeft = U;
+kernRight = U;
+layers = (
+{
+layerId = "6BCBDBF6-8315-4194-A290-F71994A92467";
+shapes = (
+{
+ref = U;
+},
+{
+pos = (310,-64);
+ref = ogonekcomb;
+}
+);
+width = 916;
+},
+{
+layerId = "4F9EBE27-C263-4ED9-B2A0-4AD0096E628D";
+shapes = (
+{
+ref = U;
+},
+{
+pos = (308,-74);
+ref = ogonekcomb;
+}
+);
+width = 1014;
+}
+);
+unicode = 370;
+}

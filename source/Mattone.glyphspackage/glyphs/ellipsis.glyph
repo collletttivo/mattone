@@ -1,0 +1,50 @@
+{
+glyphname = ellipsis;
+kernLeft = period;
+kernRight = period;
+layers = (
+{
+layerId = "6BCBDBF6-8315-4194-A290-F71994A92467";
+shapes = (
+{
+ref = period;
+},
+{
+pos = (274,0);
+ref = period;
+},
+{
+pos = (548,0);
+ref = period;
+}
+);
+width = 862;
+},
+{
+associatedMasterId = "6BCBDBF6-8315-4194-A290-F71994A92467";
+layerId = "94BB659E-249D-4C9F-9C26-7B33B32D2879";
+name = foreground;
+width = 614;
+},
+{
+layerId = "4F9EBE27-C263-4ED9-B2A0-4AD0096E628D";
+shapes = (
+{
+ref = period;
+},
+{
+pos = (314,0);
+ref = period;
+},
+{
+pos = (628,0);
+ref = period;
+}
+);
+width = 993;
+}
+);
+metricLeft = period;
+metricRight = period;
+unicode = 8230;
+}

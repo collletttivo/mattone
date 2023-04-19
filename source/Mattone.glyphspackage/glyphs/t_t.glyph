@@ -1,0 +1,37 @@
+{
+glyphname = t_t;
+kernLeft = t;
+kernRight = t;
+layers = (
+{
+layerId = "4F9EBE27-C263-4ED9-B2A0-4AD0096E628D";
+shapes = (
+{
+alignment = -1;
+ref = t;
+},
+{
+pos = (560,0);
+ref = t;
+}
+);
+width = 1227;
+},
+{
+layerId = "6BCBDBF6-8315-4194-A290-F71994A92467";
+shapes = (
+{
+alignment = -1;
+ref = t;
+},
+{
+pos = (490,0);
+ref = t;
+}
+);
+width = 1097;
+}
+);
+metricLeft = t;
+metricRight = t;
+}

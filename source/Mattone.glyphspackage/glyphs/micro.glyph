@@ -1,0 +1,75 @@
+{
+glyphname = micro;
+kernLeft = micro;
+kernRight = micro;
+layers = (
+{
+anchors = (
+{
+name = bottom;
+pos = (854,0);
+},
+{
+name = ogonek;
+pos = (926,7);
+},
+{
+name = top;
+pos = (854,560);
+}
+);
+layerId = "4F9EBE27-C263-4ED9-B2A0-4AD0096E628D";
+shapes = (
+{
+closed = 1;
+nodes = (
+(35,-245,l),
+(315,-245,l),
+(315,401,l),
+(35,401,l)
+);
+},
+{
+pos = (5,0);
+ref = u;
+}
+);
+width = 809;
+},
+{
+anchors = (
+{
+name = bottom;
+pos = (849,0);
+},
+{
+name = ogonek;
+pos = (921,7);
+},
+{
+name = top;
+pos = (849,560);
+}
+);
+layerId = "6BCBDBF6-8315-4194-A290-F71994A92467";
+shapes = (
+{
+closed = 1;
+nodes = (
+(57,-245,l),
+(207,-245,l),
+(207,401,l),
+(57,401,l)
+);
+},
+{
+ref = u;
+}
+);
+width = 711;
+}
+);
+metricLeft = u;
+metricRight = u;
+unicode = 181;
+}

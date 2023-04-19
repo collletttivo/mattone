@@ -1,0 +1,34 @@
+{
+glyphname = utilde;
+kernLeft = u;
+kernRight = u;
+layers = (
+{
+layerId = "6BCBDBF6-8315-4194-A290-F71994A92467";
+shapes = (
+{
+ref = u;
+},
+{
+pos = (67,10);
+ref = tildecomb;
+}
+);
+width = 711;
+},
+{
+layerId = "4F9EBE27-C263-4ED9-B2A0-4AD0096E628D";
+shapes = (
+{
+ref = u;
+},
+{
+pos = (99,45);
+ref = tildecomb;
+}
+);
+width = 804;
+}
+);
+unicode = 361;
+}

@@ -1,0 +1,1052 @@
+{
+.appVersion = "3151";
+.formatVersion = 3;
+axes = (
+{
+name = Weight;
+tag = wght;
+}
+);
+classes = (
+{
+automatic = 1;
+code = "A Aacute Abreve Acaron Acircumflex Adieresis Agrave Amacron Aogonek Aring Atilde AE B C Cacute Ccaron Ccedilla Cdotaccent D Eth Dcaron Dcroat E Eacute Ecaron Ecircumflex Edieresis Edotaccent Egrave Emacron Eogonek Etilde Schwa F G Gbreve Gcommaaccent Gdotaccent Gmacron H Hbar I IJ Iacute Icaron Icircumflex Idieresis Idotaccent Igrave Imacron Iogonek Itilde J Jacute K Kcommaaccent L Lacute Lcaron Lcommaaccent Lslash M N Nacute Ncaron Ncommaaccent Ntilde O Oacute Ocaron Ocircumflex Odieresis Ograve Ohungarumlaut Omacron Oslash Otilde OE P Thorn Q R Racute Rcaron Rcommaaccent S Sacute Scaron Scedilla Scommaaccent Germandbls T Tcaron Tcedilla Tcommaaccent U Uacute Ucaron Ucircumflex Udieresis Ugrave Uhungarumlaut Umacron Uogonek Uring Utilde V W Wacute Wcircumflex Wdieresis Wgrave X Y Yacute Ycircumflex Ydieresis Ygrave Ytilde Z Zacute Zcaron Zdotaccent Lcommaaccent.loclMAH Ncommaaccent.loclMAH I.ss01 IJ.ss01 Iacute.ss01 Icircumflex.ss01 Idieresis.ss01 Idotaccent.ss01 Igrave.ss01 Imacron.ss01 Iogonek.ss01 Itilde.ss01 Q.ss01";
+name = Uppercase;
+}
+);
+customParameters = (
+{
+name = "Use Typo Metrics";
+value = 1;
+},
+{
+name = fsType;
+value = (
+);
+},
+{
+name = unicodeRanges;
+value = (
+0,
+1,
+2
+);
+},
+{
+name = "Write lastChange";
+value = 0;
+},
+{
+name = "Write DisplayStrings";
+value = 0;
+}
+);
+date = "2020-04-20 10:57:36 +0000";
+familyName = Mattone;
+featurePrefixes = (
+{
+automatic = 1;
+code = "languagesystem DFLT dflt;
+
+languagesystem latn dflt;
+languagesystem latn AZE;
+languagesystem latn CRT;
+languagesystem latn KAZ;
+languagesystem latn TAT;
+languagesystem latn TRK;
+languagesystem latn ROM;
+languagesystem latn MOL;
+languagesystem latn MAH;
+languagesystem latn NLD;
+";
+name = Languagesystems;
+}
+);
+features = (
+{
+automatic = 1;
+code = "feature locl;
+feature sups;
+feature frac;
+feature ordn;
+feature case;
+feature ss01;
+";
+tag = aalt;
+},
+{
+automatic = 1;
+code = "lookup ccmp_Other_1 {
+	@CombiningTopAccents = [acutecomb brevecomb caroncomb circumflexcomb commaturnedabovecomb dieresiscomb dotaccentcomb gravecomb hungarumlautcomb macroncomb ringcomb tildecomb];
+	@CombiningNonTopAccents = [cedillacomb dotbelowcomb ogonekcomb];
+	sub [i j]' @CombiningTopAccents by [idotless jdotless];
+	sub [i j]' @CombiningNonTopAccents @CombiningTopAccents by [idotless jdotless];
+	@Markscomb = [dieresiscomb dotaccentcomb gravecomb acutecomb hungarumlautcomb circumflexcomb caroncomb brevecomb ringcomb tildecomb macroncomb];
+	@MarkscombCase = [dieresiscomb.case dotaccentcomb.case gravecomb.case acutecomb.case hungarumlautcomb.case circumflexcomb.case caroncomb.case brevecomb.case ringcomb.case tildecomb.case macroncomb.case];
+	sub @Markscomb @Markscomb' by @MarkscombCase;
+	sub @Uppercase @Markscomb' by @MarkscombCase;
+} ccmp_Other_1;
+
+lookup ccmp_Other_2 {
+	sub @Markscomb' @MarkscombCase by @MarkscombCase;
+	sub @MarkscombCase @Markscomb' by @MarkscombCase;
+} ccmp_Other_2;
+
+lookup ccmp_latn_1 {
+	sub fi by f i;
+	sub fl by f l;
+} ccmp_latn_1;
+
+script latn;
+lookup ccmp_latn_1;
+";
+tag = ccmp;
+},
+{
+automatic = 1;
+code = "lookup locl_latn_0 {
+	script latn;
+	language AZE;
+	sub i by idotaccent;
+	language CRT;
+	sub i by idotaccent;
+	language KAZ;
+	sub i by idotaccent;
+	language TAT;
+	sub i by idotaccent;
+	language TRK;
+	sub i by idotaccent;
+} locl_latn_0;
+
+lookup locl_latn_1 {
+	script latn;
+	language ROM;
+	sub Scedilla by Scommaaccent;
+	sub scedilla by scommaaccent;
+	sub Tcedilla by Tcommaaccent;
+	sub tcedilla by tcommaaccent;
+	language MOL;
+	sub Scedilla by Scommaaccent;
+	sub scedilla by scommaaccent;
+	sub Tcedilla by Tcommaaccent;
+	sub tcedilla by tcommaaccent;
+} locl_latn_1;
+
+lookup locl_latn_2 {
+	script latn;
+	language MAH;
+	sub Lcommaaccent by Lcommaaccent.loclMAH;
+	sub Ncommaaccent by Ncommaaccent.loclMAH;
+	sub lcommaaccent by lcommaaccent.loclMAH;
+	sub ncommaaccent by ncommaaccent.loclMAH;
+} locl_latn_2;
+
+lookup locl_latn_3 {
+	script latn;
+	language NLD;
+	sub iacute j' by jacute;
+	sub Iacute J' by Jacute;
+} locl_latn_3;
+";
+tag = locl;
+},
+{
+automatic = 1;
+code = "sub zero by zerosuperior;
+sub one by onesuperior;
+sub two by twosuperior;
+sub three by threesuperior;
+sub four by foursuperior;
+";
+tag = sups;
+},
+{
+automatic = 1;
+code = "sub one slash four by onequarter;
+sub one slash two by onehalf;
+sub three slash four by threequarters;
+";
+tag = frac;
+},
+{
+automatic = 1;
+code = "sub [zero one two three four five six seven eight nine] [A a]' by ordfeminine;
+sub [zero one two three four five six seven eight nine] [O o]' by ordmasculine;
+";
+tag = ordn;
+},
+{
+automatic = 1;
+code = "sub dieresiscomb by dieresiscomb.case;
+sub dotaccentcomb by dotaccentcomb.case;
+sub gravecomb by gravecomb.case;
+sub acutecomb by acutecomb.case;
+sub hungarumlautcomb by hungarumlautcomb.case;
+sub circumflexcomb by circumflexcomb.case;
+sub caroncomb by caroncomb.case;
+sub brevecomb by brevecomb.case;
+sub ringcomb by ringcomb.case;
+sub tildecomb by tildecomb.case;
+sub macroncomb by macroncomb.case;
+";
+tag = case;
+},
+{
+automatic = 1;
+code = "lookupflag IgnoreMarks;
+sub t t by t_t;
+";
+tag = dlig;
+},
+{
+automatic = 1;
+code = "lookupflag IgnoreMarks;
+sub f i by fi;
+sub f l by fl;
+";
+tag = liga;
+},
+{
+automatic = 1;
+code = "sub I by I.ss01;
+sub IJ by IJ.ss01;
+sub Iacute by Iacute.ss01;
+sub Icircumflex by Icircumflex.ss01;
+sub Idieresis by Idieresis.ss01;
+sub Idotaccent by Idotaccent.ss01;
+sub Igrave by Igrave.ss01;
+sub Imacron by Imacron.ss01;
+sub Iogonek by Iogonek.ss01;
+sub Itilde by Itilde.ss01;
+sub Q by Q.ss01;
+sub a by a.ss01;
+sub aacute by aacute.ss01;
+sub abreve by abreve.ss01;
+sub acircumflex by acircumflex.ss01;
+sub adieresis by adieresis.ss01;
+sub agrave by agrave.ss01;
+sub amacron by amacron.ss01;
+sub aogonek by aogonek.ss01;
+sub aring by aring.ss01;
+sub atilde by atilde.ss01;
+sub g by g.ss01;
+sub gbreve by gbreve.ss01;
+sub gcommaaccent by gcommaaccent.ss01;
+sub gdotaccent by gdotaccent.ss01;
+sub gmacron by gmacron.ss01;
+sub l by l.ss01;
+sub lacute by lacute.ss01;
+sub lcaron by lcaron.ss01;
+sub lcommaaccent by lcommaaccent.ss01;
+sub lslash by lslash.ss01;
+sub asterisk by asterisk.ss01;
+";
+labels = (
+{
+language = dflt;
+value = "B-Style";
+}
+);
+tag = ss01;
+}
+);
+fontMaster = (
+{
+axesValues = (
+600
+);
+customParameters = (
+{
+name = hheaAscender;
+value = 1044;
+},
+{
+name = hheaDescender;
+value = -312;
+},
+{
+name = hheaLineGap;
+value = 0;
+},
+{
+name = typoAscender;
+value = 1044;
+},
+{
+name = typoDescender;
+value = -312;
+},
+{
+name = typoLineGap;
+value = 0;
+},
+{
+name = winAscent;
+value = 1044;
+},
+{
+name = winDescent;
+value = 312;
+}
+);
+guides = (
+{
+locked = 1;
+name = ovrsht;
+pos = (699,-21);
+},
+{
+locked = 1;
+name = ovrsht;
+pos = (635,577);
+},
+{
+locked = 1;
+name = oversht;
+pos = (890,770);
+},
+{
+locked = 1;
+name = "half-x-h";
+pos = (300,280);
+}
+);
+iconName = Extended;
+id = "6BCBDBF6-8315-4194-A290-F71994A92467";
+metricValues = (
+{
+over = 5;
+pos = 785;
+},
+{
+over = 17;
+pos = 750;
+},
+{
+over = 21;
+pos = 560;
+},
+{
+over = -21;
+},
+{
+over = -10;
+pos = -215;
+},
+{
+}
+);
+name = Regular;
+stemValues = (
+120,
+130,
+150,
+160
+);
+userData = {
+GSCornerRadius = 400;
+GSOffsetHorizontal = 5;
+GSOffsetVertical = 5;
+};
+},
+{
+axesValues = (
+900
+);
+customParameters = (
+{
+name = hheaAscender;
+value = 1090;
+},
+{
+name = hheaDescender;
+value = -365;
+},
+{
+name = hheaLineGap;
+value = 0;
+},
+{
+name = typoAscender;
+value = 1090;
+},
+{
+name = typoDescender;
+value = -365;
+},
+{
+name = typoLineGap;
+value = 0;
+},
+{
+name = winAscent;
+value = 1090;
+},
+{
+name = winDescent;
+value = 365;
+}
+);
+iconName = Bold_Extended;
+id = "4F9EBE27-C263-4ED9-B2A0-4AD0096E628D";
+metricValues = (
+{
+over = 10;
+pos = 800;
+},
+{
+over = 25;
+pos = 750;
+},
+{
+over = 25;
+pos = 570;
+},
+{
+over = -25;
+},
+{
+over = -30;
+pos = -230;
+},
+{
+}
+);
+name = Black;
+stemValues = (
+250,
+260,
+300,
+310
+);
+}
+);
+instances = (
+{
+axesValues = (
+600
+);
+instanceInterpolations = {
+"6BCBDBF6-8315-4194-A290-F71994A92467" = 1;
+};
+name = Regular;
+widthClass = 6;
+},
+{
+axesValues = (
+770
+);
+instanceInterpolations = {
+"4F9EBE27-C263-4ED9-B2A0-4AD0096E628D" = 0.56667;
+"6BCBDBF6-8315-4194-A290-F71994A92467" = 0.43333;
+};
+isBold = 1;
+linkStyle = Regular;
+name = Bold;
+weightClass = 700;
+widthClass = 6;
+},
+{
+axesValues = (
+900
+);
+instanceInterpolations = {
+"4F9EBE27-C263-4ED9-B2A0-4AD0096E628D" = 1;
+};
+name = Black;
+weightClass = 900;
+widthClass = 6;
+}
+);
+kerningLTR = {
+"6BCBDBF6-8315-4194-A290-F71994A92467" = {
+"@MMK_L_A" = {
+"@MMK_R_O" = -65;
+"@MMK_R_S" = -20;
+"@MMK_R_T" = -140;
+"@MMK_R_U" = -70;
+"@MMK_R_V" = -210;
+"@MMK_R_W" = -150;
+"@MMK_R_Y" = -180;
+"@MMK_R_f" = -40;
+"@MMK_R_o" = -60;
+"@MMK_R_one" = -80;
+"@MMK_R_t" = -50;
+"@MMK_R_v" = -120;
+"@MMK_R_x" = 10;
+};
+"@MMK_L_B" = {
+"@MMK_R_A" = -10;
+};
+"@MMK_L_E" = {
+"@MMK_R_O" = -20;
+};
+"@MMK_L_F" = {
+"@MMK_R_A" = -100;
+"@MMK_R_o" = -15;
+};
+"@MMK_L_G" = {
+"@MMK_R_A" = -10;
+};
+"@MMK_L_J" = {
+"@MMK_R_A" = -40;
+};
+"@MMK_L_K" = {
+"@MMK_R_A" = -20;
+"@MMK_R_O" = -70;
+"@MMK_R_S" = -40;
+"@MMK_R_lslash" = -50;
+"@MMK_R_o" = -70;
+"@MMK_R_s" = -20;
+"@MMK_R_t" = -20;
+"@MMK_R_u" = -15;
+"@MMK_R_v" = -50;
+"@MMK_R_w" = -35;
+g.ss01 = -20;
+};
+"@MMK_L_L" = {
+"@MMK_R_O" = -50;
+"@MMK_R_S" = -15;
+"@MMK_R_T" = -150;
+"@MMK_R_V" = -150;
+"@MMK_R_W" = -130;
+"@MMK_R_Y" = -130;
+periodcentered = -100;
+};
+"@MMK_L_O" = {
+"@MMK_R_A" = -60;
+"@MMK_R_O" = -5;
+"@MMK_R_T" = -40;
+"@MMK_R_V" = -55;
+"@MMK_R_W" = -45;
+"@MMK_R_X" = -55;
+"@MMK_R_Y" = -55;
+};
+"@MMK_L_P" = {
+"@MMK_R_A" = -120;
+};
+"@MMK_L_R" = {
+"@MMK_R_A" = -20;
+"@MMK_R_o" = -30;
+};
+"@MMK_L_S" = {
+"@MMK_R_A" = -20;
+"@MMK_R_T" = -20;
+"@MMK_R_W" = -50;
+"@MMK_R_o" = -10;
+};
+"@MMK_L_T" = {
+"@MMK_R_A" = -130;
+"@MMK_R_J" = -150;
+"@MMK_R_O" = -40;
+"@MMK_R_S" = -20;
+"@MMK_R_o" = -70;
+"@MMK_R_u" = -20;
+};
+"@MMK_L_U" = {
+"@MMK_R_A" = -70;
+};
+"@MMK_L_V" = {
+"@MMK_R_A" = -210;
+"@MMK_R_J" = -150;
+"@MMK_R_O" = -60;
+"@MMK_R_V" = -20;
+"@MMK_R_a" = -100;
+"@MMK_R_o" = -80;
+"@MMK_R_s" = -60;
+"@MMK_R_y" = -50;
+};
+"@MMK_L_W" = {
+"@MMK_R_A" = -150;
+"@MMK_R_J" = -100;
+"@MMK_R_O" = -50;
+"@MMK_R_a" = -70;
+"@MMK_R_lslash" = -50;
+"@MMK_R_o" = -90;
+};
+"@MMK_L_X" = {
+"@MMK_R_O" = -60;
+};
+"@MMK_L_Y" = {
+"@MMK_R_A" = -180;
+"@MMK_R_J" = -150;
+"@MMK_R_O" = -58;
+"@MMK_R_a" = -80;
+"@MMK_R_o" = -100;
+"@MMK_R_s" = -80;
+q = -100;
+};
+"@MMK_L_d" = {
+"@MMK_R_o" = 10;
+};
+"@MMK_L_eth" = {
+"@MMK_R_A" = -40;
+};
+"@MMK_L_f" = {
+"@MMK_R_a" = -35;
+"@MMK_R_o" = -40;
+};
+"@MMK_L_five" = {
+"@MMK_R_eight" = 0;
+"@MMK_R_zero" = -20;
+};
+"@MMK_L_four" = {
+"@MMK_R_four" = -20;
+"@MMK_R_two" = -15;
+};
+"@MMK_L_hyphen" = {
+"@MMK_R_hyphen" = -100;
+};
+"@MMK_L_j" = {
+"@MMK_R_j" = 180;
+};
+"@MMK_L_k" = {
+"@MMK_R_a" = -20;
+"@MMK_R_o" = -65;
+"@MMK_R_t" = -20;
+"@MMK_R_v" = -50;
+"@MMK_R_w" = -30;
+"@MMK_R_y" = -50;
+odieresis = -50;
+};
+"@MMK_L_lslash" = {
+"@MMK_R_o" = 0;
+};
+"@MMK_L_n" = {
+"@MMK_R_y" = -20;
+};
+"@MMK_L_nine" = {
+"@MMK_R_nine" = -20;
+"@MMK_R_three" = -20;
+};
+"@MMK_L_o" = {
+"@MMK_R_f" = -15;
+"@MMK_R_v" = -30;
+"@MMK_R_w" = -18;
+"@MMK_R_x" = -40;
+"@MMK_R_y" = -30;
+};
+"@MMK_L_one" = {
+"@MMK_R_A" = 50;
+};
+"@MMK_L_r" = {
+"@MMK_R_a" = -10;
+"@MMK_R_o" = -10;
+"@MMK_R_t" = 35;
+"@MMK_R_v" = 10;
+"@MMK_R_y" = 5;
+};
+"@MMK_L_seven" = {
+"@MMK_R_A" = -150;
+"@MMK_R_four" = -120;
+"@MMK_R_nine" = -20;
+"@MMK_R_six" = -40;
+};
+"@MMK_L_six" = {
+"@MMK_R_four" = -15;
+"@MMK_R_nine" = -50;
+"@MMK_R_one" = -30;
+"@MMK_R_seven" = -20;
+"@MMK_R_three" = -20;
+};
+"@MMK_L_slash" = {
+"@MMK_R_slash" = -20;
+};
+"@MMK_L_t" = {
+"@MMK_R_o" = -5;
+"@MMK_R_t" = -30;
+};
+"@MMK_L_v" = {
+"@MMK_R_o" = -35;
+g.ss01 = -30;
+};
+"@MMK_L_w" = {
+"@MMK_R_o" = -25;
+};
+"@MMK_L_x" = {
+"@MMK_R_o" = -40;
+};
+"@MMK_L_y" = {
+"@MMK_R_a" = -40;
+"@MMK_R_lslash" = -20;
+"@MMK_R_o" = -45;
+"@MMK_R_s" = -30;
+g.ss01 = -30;
+};
+"@MMK_L_zero" = {
+"@MMK_R_three" = -20;
+};
+Germandbls = {
+"@MMK_R_A" = -50;
+};
+Iacute = {
+Icircumflex = 150;
+};
+Icircumflex = {
+Idieresis = 150;
+};
+Idieresis = {
+Idotaccent = 100;
+};
+Idotaccent = {
+Igrave = 100;
+};
+Igrave = {
+Imacron = 100;
+};
+Imacron = {
+Iogonek = 50;
+};
+Thorn = {
+"@MMK_R_A" = -100;
+};
+dcaron = {
+"@MMK_R_a" = 50;
+"@MMK_R_h" = 110;
+"@MMK_R_n" = 70;
+"@MMK_R_t" = 120;
+};
+g = {
+"@MMK_R_j" = 120;
+};
+g.ss01 = {
+"@MMK_R_j" = 150;
+"@MMK_R_o" = -20;
+};
+l.ss01 = {
+"@MMK_R_o" = -30;
+l.ss01 = 0;
+};
+q = {
+"@MMK_R_j" = 200;
+};
+};
+"4F9EBE27-C263-4ED9-B2A0-4AD0096E628D" = {
+"@MMK_L_A" = {
+"@MMK_R_O" = -65;
+"@MMK_R_T" = -170;
+"@MMK_R_U" = -60;
+"@MMK_R_V" = -230;
+"@MMK_R_W" = -150;
+"@MMK_R_Y" = -200;
+"@MMK_R_f" = -30;
+"@MMK_R_o" = -40;
+"@MMK_R_t" = -60;
+"@MMK_R_v" = -120;
+"@MMK_R_w" = -130;
+};
+"@MMK_L_B" = {
+"@MMK_R_V" = -30;
+"@MMK_R_Y" = -50;
+};
+"@MMK_L_F" = {
+"@MMK_R_A" = -110;
+"@MMK_R_a" = -20;
+"@MMK_R_o" = -20;
+};
+"@MMK_L_G" = {
+"@MMK_R_Y" = -50;
+};
+"@MMK_L_J" = {
+"@MMK_R_A" = -50;
+};
+"@MMK_L_K" = {
+"@MMK_R_A" = -50;
+"@MMK_R_O" = -120;
+"@MMK_R_S" = -60;
+"@MMK_R_o" = -80;
+"@MMK_R_v" = -50;
+"@MMK_R_y" = -130;
+};
+"@MMK_L_L" = {
+"@MMK_R_T" = -150;
+"@MMK_R_V" = -120;
+"@MMK_R_W" = -60;
+"@MMK_R_Y" = -100;
+};
+"@MMK_L_O" = {
+"@MMK_R_A" = -70;
+"@MMK_R_V" = -50;
+"@MMK_R_W" = -40;
+"@MMK_R_X" = -70;
+"@MMK_R_Y" = -70;
+};
+"@MMK_L_P" = {
+"@MMK_R_A" = -110;
+"@MMK_R_X" = -70;
+};
+"@MMK_L_S" = {
+"@MMK_R_A" = -55;
+"@MMK_R_T" = -30;
+"@MMK_R_X" = -35;
+"@MMK_R_Y" = -50;
+};
+"@MMK_L_T" = {
+"@MMK_R_A" = -170;
+"@MMK_R_a" = -30;
+"@MMK_R_o" = -70;
+};
+"@MMK_L_U" = {
+"@MMK_R_A" = -60;
+};
+"@MMK_L_V" = {
+"@MMK_R_A" = -230;
+"@MMK_R_O" = -50;
+"@MMK_R_V" = -50;
+"@MMK_R_X" = -30;
+"@MMK_R_a" = -100;
+"@MMK_R_o" = -100;
+"@MMK_R_u" = -30;
+"@MMK_R_y" = -50;
+};
+"@MMK_L_W" = {
+"@MMK_R_A" = -160;
+"@MMK_R_O" = -40;
+"@MMK_R_S" = -50;
+"@MMK_R_a" = -40;
+"@MMK_R_o" = -70;
+};
+"@MMK_L_X" = {
+"@MMK_R_O" = -70;
+"@MMK_R_V" = -30;
+"@MMK_R_Y" = -50;
+};
+"@MMK_L_Y" = {
+"@MMK_R_A" = -200;
+"@MMK_R_J" = -100;
+"@MMK_R_O" = -70;
+"@MMK_R_S" = -50;
+"@MMK_R_X" = -50;
+"@MMK_R_o" = -150;
+};
+"@MMK_L_e" = {
+"@MMK_R_v" = -30;
+};
+"@MMK_L_f" = {
+"@MMK_R_a" = -10;
+"@MMK_R_o" = -20;
+};
+"@MMK_L_j" = {
+"@MMK_R_j" = 200;
+};
+"@MMK_L_k" = {
+"@MMK_R_a" = -35;
+"@MMK_R_o" = -90;
+"@MMK_R_s" = -30;
+"@MMK_R_t" = -50;
+"@MMK_R_u" = -50;
+"@MMK_R_v" = -50;
+"@MMK_R_w" = -40;
+"@MMK_R_y" = -60;
+};
+"@MMK_L_n" = {
+"@MMK_R_v" = -30;
+"@MMK_R_w" = -10;
+"@MMK_R_y" = -20;
+};
+"@MMK_L_o" = {
+"@MMK_R_t" = -15;
+"@MMK_R_v" = -25;
+"@MMK_R_w" = -20;
+"@MMK_R_x" = -50;
+"@MMK_R_y" = -30;
+};
+"@MMK_L_t" = {
+"@MMK_R_o" = -10;
+"@MMK_R_t" = -20;
+};
+"@MMK_L_v" = {
+"@MMK_R_o" = -35;
+};
+"@MMK_L_w" = {
+"@MMK_R_o" = -30;
+};
+"@MMK_L_x" = {
+"@MMK_R_o" = -50;
+};
+"@MMK_L_y" = {
+"@MMK_R_a" = -25;
+"@MMK_R_o" = -40;
+};
+dcaron = {
+"@MMK_R_a" = 100;
+"@MMK_R_h" = 300;
+"@MMK_R_t" = 180;
+};
+g = {
+"@MMK_R_j" = 190;
+};
+g.ss01 = {
+"@MMK_R_j" = 150;
+};
+lcaron = {
+"@MMK_R_h" = 220;
+};
+};
+};
+metrics = (
+{
+type = ascender;
+},
+{
+type = "cap height";
+},
+{
+type = "x-height";
+},
+{
+type = baseline;
+},
+{
+type = descender;
+},
+{
+type = "italic angle";
+}
+);
+properties = (
+{
+key = copyrights;
+values = (
+{
+language = dflt;
+value = "© Nunzio Mazzaferro and Collletttivo, 2022";
+}
+);
+},
+{
+key = designers;
+values = (
+{
+language = dflt;
+value = "Nunzio Mazzaferro";
+}
+);
+},
+{
+key = designerURL;
+value = "https://collletttivo.it";
+},
+{
+key = manufacturers;
+values = (
+{
+language = dflt;
+value = Collletttivo;
+}
+);
+},
+{
+key = manufacturerURL;
+value = "https://collletttivo.it";
+},
+{
+key = vendorID;
+value = CLT;
+},
+{
+key = licenses;
+values = (
+{
+language = dflt;
+value = "SIL OpenFont License";
+}
+);
+},
+{
+key = licenseURL;
+value = "https://scripts.sil.org/OFL_web";
+}
+);
+stems = (
+{
+horizontal = 1;
+name = hStem0;
+},
+{
+horizontal = 1;
+name = hStem1;
+},
+{
+name = vStem0;
+},
+{
+name = vStem1;
+}
+);
+unitsPerEm = 1000;
+userData = {
+UFO.lib = {
+GSDimensionPlugin.Dimensions = {
+"710A5D48-E372-4D0A-8377-690C3DD4F686" = {
+nV = "125";
+oH = "105";
+oV = "125";
+};
+};
+com.defcon.sortDescriptor = (
+{
+allowPseudoUnicode = 1;
+ascending = "Type@Cooper Term1";
+type = characterSet;
+}
+);
+com.letterror.lightMeter.prefs = {
+chunkSize = 5;
+diameter = 200;
+drawTail = 0;
+invert = 0;
+toolDiameter = 30;
+toolStyle = fluid;
+};
+com.loicsander.scaleFast = {
+guides = (
+);
+presets = {
+};
+};
+com.typemytype.robofont.compileSettings.MacRomanFirst = 0;
+com.typemytype.robofont.compileSettings.autohint = 1;
+com.typemytype.robofont.compileSettings.checkOutlines = 1;
+com.typemytype.robofont.compileSettings.createDummyDSIG = 1;
+com.typemytype.robofont.compileSettings.decompose = 1;
+com.typemytype.robofont.compileSettings.generateFormat = 0;
+com.typemytype.robofont.compileSettings.layerName = foreground;
+com.typemytype.robofont.compileSettings.path = "/Users/annunziatomazzaferro/Downloads/Mattone-150.otf";
+com.typemytype.robofont.compileSettings.releaseMode = 0;
+com.typemytype.robofont.guideline.magnetic.9UWHjyw5we = 5;
+com.typemytype.robofont.guideline.magnetic.K1WIHJ2Fqk = 5;
+com.typemytype.robofont.guideline.magnetic.MCdBzsmmLH = 5;
+com.typemytype.robofont.guideline.magnetic.W8jZLWDPGT = 5;
+com.typemytype.robofont.guideline.magnetic.jdeSFkPwCz = 5;
+com.typemytype.robofont.guideline.showMeasurements.9UWHjyw5we = 0;
+com.typemytype.robofont.guideline.showMeasurements.K1WIHJ2Fqk = 0;
+com.typemytype.robofont.guideline.showMeasurements.MCdBzsmmLH = 0;
+com.typemytype.robofont.guideline.showMeasurements.W8jZLWDPGT = 0;
+com.typemytype.robofont.guideline.showMeasurements.jdeSFkPwCz = 0;
+com.typemytype.robofont.italicSlantOffset = 0;
+com.typemytype.robofont.segmentType = curve;
+com.typemytype.robofont.shouldAddPointsInSplineConversion = 1;
+com.typemytype.robofont.smartSets.uniqueKey = "4612852304";
+public.postscriptNames = {
+Scommaaccent = uni0218;
+Tcommaaccent = uni021A;
+brevecomb = uni0306;
+cedillacomb = uni0327;
+circumflexcomb = uni0302;
+commaaccentcomb = uni0326;
+dieresiscomb = uni0308;
+euro = Euro;
+guillemetleft = guillemotleft;
+guillemetright = guillemotright;
+idotless = dotlessi;
+ringcomb = uni030A;
+scommaaccent = uni0219;
+tcommaaccent = uni021B;
+};
+};
+UFOFormat = 3;
+};
+versionMajor = 2;
+versionMinor = 0;
+}

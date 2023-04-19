@@ -1,0 +1,32 @@
+{
+glyphname = ucaron;
+layers = (
+{
+layerId = "4F9EBE27-C263-4ED9-B2A0-4AD0096E628D";
+shapes = (
+{
+ref = u;
+},
+{
+pos = (31,35);
+ref = caroncomb;
+}
+);
+width = 804;
+},
+{
+layerId = "6BCBDBF6-8315-4194-A290-F71994A92467";
+shapes = (
+{
+ref = u;
+},
+{
+pos = (51,-32);
+ref = caroncomb;
+}
+);
+width = 711;
+}
+);
+unicode = 468;
+}

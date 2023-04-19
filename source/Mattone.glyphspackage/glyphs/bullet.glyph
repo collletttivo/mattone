@@ -1,0 +1,36 @@
+{
+glyphname = bullet;
+kernLeft = bullet;
+kernRight = bullet;
+layers = (
+{
+layerId = "6BCBDBF6-8315-4194-A290-F71994A92467";
+shapes = (
+{
+pos = (40,-105);
+ref = periodcentered;
+scale = (1.3,1.3);
+}
+);
+width = 527;
+},
+{
+associatedMasterId = "6BCBDBF6-8315-4194-A290-F71994A92467";
+layerId = "AAC8F35E-1ADE-49ED-A2ED-85C5485C033D";
+name = foreground;
+width = 614;
+},
+{
+layerId = "4F9EBE27-C263-4ED9-B2A0-4AD0096E628D";
+shapes = (
+{
+pos = (54,-125);
+ref = periodcentered;
+scale = (1.3,1.3);
+}
+);
+width = 674;
+}
+);
+unicode = 8226;
+}

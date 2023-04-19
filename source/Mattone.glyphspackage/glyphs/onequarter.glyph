@@ -1,0 +1,77 @@
+{
+glyphname = onequarter;
+kernLeft = foursuperior;
+kernRight = foursuperior;
+layers = (
+{
+layerId = "4F9EBE27-C263-4ED9-B2A0-4AD0096E628D";
+shapes = (
+{
+alignment = -1;
+pos = (859,-397);
+ref = foursuperior;
+},
+{
+pos = (329,0);
+ref = fraction;
+},
+{
+alignment = -1;
+pos = (15,-100);
+ref = onesuperior;
+}
+);
+width = 1555;
+},
+{
+background = {
+shapes = (
+{
+closed = 1;
+nodes = (
+(191,0,l),
+(328,0,l),
+(888,750,l),
+(751,750,l)
+);
+},
+{
+closed = 1;
+nodes = (
+(191,0,l),
+(328,0,l),
+(888,750,l),
+(751,750,l)
+);
+},
+{
+pos = (630,-335);
+ref = foursuperior;
+},
+{
+ref = onesuperior;
+}
+);
+};
+layerId = "6BCBDBF6-8315-4194-A290-F71994A92467";
+shapes = (
+{
+alignment = -1;
+pos = (633,-300);
+ref = foursuperior;
+},
+{
+pos = (234,0);
+ref = fraction;
+},
+{
+alignment = -1;
+pos = (-1,0);
+ref = onesuperior;
+}
+);
+width = 1184;
+}
+);
+unicode = 188;
+}

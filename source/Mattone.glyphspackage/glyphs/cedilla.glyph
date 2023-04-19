@@ -1,0 +1,27 @@
+{
+glyphname = cedilla;
+kernLeft = cedillacomb;
+kernRight = cedillacomb;
+layers = (
+{
+layerId = "6BCBDBF6-8315-4194-A290-F71994A92467";
+shapes = (
+{
+ref = cedillacomb;
+}
+);
+width = 421;
+},
+{
+layerId = "4F9EBE27-C263-4ED9-B2A0-4AD0096E628D";
+shapes = (
+{
+pos = (5,0);
+ref = cedillacomb;
+}
+);
+width = 623;
+}
+);
+unicode = 184;
+}

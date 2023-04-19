@@ -1,0 +1,25 @@
+{
+glyphname = circumflexcomb.case;
+kernLeft = circumflex;
+kernRight = circumflexcomb;
+layers = (
+{
+layerId = "4F9EBE27-C263-4ED9-B2A0-4AD0096E628D";
+shapes = (
+{
+ref = circumflex;
+}
+);
+width = 736;
+},
+{
+layerId = "6BCBDBF6-8315-4194-A290-F71994A92467";
+shapes = (
+{
+ref = circumflex;
+}
+);
+width = 610;
+}
+);
+}

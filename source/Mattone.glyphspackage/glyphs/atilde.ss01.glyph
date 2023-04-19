@@ -1,0 +1,33 @@
+{
+glyphname = atilde.ss01;
+kernLeft = o;
+kernRight = a.ss01;
+layers = (
+{
+layerId = "6BCBDBF6-8315-4194-A290-F71994A92467";
+shapes = (
+{
+ref = a.ss01;
+},
+{
+pos = (100,10);
+ref = tildecomb;
+}
+);
+width = 762;
+},
+{
+layerId = "4F9EBE27-C263-4ED9-B2A0-4AD0096E628D";
+shapes = (
+{
+ref = a.ss01;
+},
+{
+pos = (131,45);
+ref = tildecomb;
+}
+);
+width = 868;
+}
+);
+}

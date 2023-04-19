@@ -1,0 +1,58 @@
+{
+glyphname = macroncomb;
+kernLeft = macroncomb;
+kernRight = macroncomb;
+layers = (
+{
+anchors = (
+{
+name = _top;
+pos = (269,560);
+},
+{
+name = top;
+pos = (269,750);
+}
+);
+layerId = "6BCBDBF6-8315-4194-A290-F71994A92467";
+shapes = (
+{
+closed = 1;
+nodes = (
+(60,645,l),
+(478,645,l),
+(478,750,l),
+(60,750,l)
+);
+}
+);
+width = 538;
+},
+{
+anchors = (
+{
+name = _top;
+pos = (297,505);
+},
+{
+name = top;
+pos = (297,790);
+}
+);
+layerId = "4F9EBE27-C263-4ED9-B2A0-4AD0096E628D";
+shapes = (
+{
+closed = 1;
+nodes = (
+(23,605,l),
+(571,605,l),
+(571,790,l),
+(23,790,l)
+);
+}
+);
+width = 609;
+}
+);
+unicode = 772;
+}

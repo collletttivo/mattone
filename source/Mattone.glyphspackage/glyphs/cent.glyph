@@ -1,0 +1,54 @@
+{
+glyphname = cent;
+kernLeft = o;
+kernRight = c;
+layers = (
+{
+layerId = "6BCBDBF6-8315-4194-A290-F71994A92467";
+shapes = (
+{
+closed = 1;
+nodes = (
+(280,-21,l),
+(375,-21,l),
+(442,796,l),
+(347,796,l)
+);
+},
+{
+pos = (0,108);
+ref = c;
+}
+);
+width = 638;
+},
+{
+associatedMasterId = "6BCBDBF6-8315-4194-A290-F71994A92467";
+layerId = "58A6A7BA-9F1C-4FE4-93BB-C8628BAAD92E";
+name = foreground;
+width = 1022;
+},
+{
+layerId = "4F9EBE27-C263-4ED9-B2A0-4AD0096E628D";
+shapes = (
+{
+closed = 1;
+nodes = (
+(370,-31,l),
+(465,-31,l),
+(572,796,l),
+(477,796,l)
+);
+},
+{
+pos = (0,108);
+ref = c;
+}
+);
+width = 737;
+}
+);
+metricLeft = c;
+metricRight = c;
+unicode = 162;
+}

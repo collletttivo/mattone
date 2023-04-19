@@ -1,0 +1,25 @@
+{
+glyphname = hungarumlautcomb.case;
+kernLeft = hungarumlaut;
+kernRight = hungarumlautcomb;
+layers = (
+{
+layerId = "4F9EBE27-C263-4ED9-B2A0-4AD0096E628D";
+shapes = (
+{
+ref = hungarumlaut;
+}
+);
+width = 578;
+},
+{
+layerId = "6BCBDBF6-8315-4194-A290-F71994A92467";
+shapes = (
+{
+ref = hungarumlaut;
+}
+);
+width = 803;
+}
+);
+}

@@ -1,0 +1,27 @@
+{
+glyphname = asterisk.ss01;
+kernLeft = asterisk;
+kernRight = asterisk;
+layers = (
+{
+layerId = "6BCBDBF6-8315-4194-A290-F71994A92467";
+shapes = (
+{
+pos = (0,-226);
+ref = asterisk;
+}
+);
+width = 565;
+},
+{
+layerId = "4F9EBE27-C263-4ED9-B2A0-4AD0096E628D";
+shapes = (
+{
+pos = (51,-226);
+ref = asterisk;
+}
+);
+width = 745;
+}
+);
+}

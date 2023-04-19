@@ -1,0 +1,58 @@
+{
+glyphname = commaturnedabovecomb;
+kernLeft = commaturnedabovecomb;
+kernRight = commaturnedabovecomb;
+layers = (
+{
+anchors = (
+{
+name = _top;
+pos = (149,711);
+},
+{
+name = top;
+pos = (169,976);
+}
+);
+layerId = "6BCBDBF6-8315-4194-A290-F71994A92467";
+shapes = (
+{
+closed = 1;
+nodes = (
+(297,974,l),
+(163,974,l),
+(98,781,l),
+(259,781,l)
+);
+}
+);
+width = 275;
+},
+{
+anchors = (
+{
+name = _top;
+pos = (325,635);
+},
+{
+name = top;
+pos = (325,974);
+}
+);
+layerId = "4F9EBE27-C263-4ED9-B2A0-4AD0096E628D";
+shapes = (
+{
+closed = 1;
+nodes = (
+(489,974,l),
+(255,974,l),
+(160,751,l),
+(451,751,l)
+);
+}
+);
+width = 643;
+}
+);
+unicode = 786;
+}

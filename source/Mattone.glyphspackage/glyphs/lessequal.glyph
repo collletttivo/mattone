@@ -1,0 +1,30 @@
+{
+glyphname = lessequal;
+kernLeft = lessequal;
+kernRight = lessequal;
+layers = (
+{
+layerId = "4F9EBE27-C263-4ED9-B2A0-4AD0096E628D";
+shapes = (
+{
+pos = (695,0);
+ref = greaterequal;
+scale = (-1,1);
+}
+);
+width = 691;
+},
+{
+layerId = "6BCBDBF6-8315-4194-A290-F71994A92467";
+shapes = (
+{
+pos = (614,0);
+ref = greaterequal;
+scale = (-1,1);
+}
+);
+width = 600;
+}
+);
+unicode = 8804;
+}
