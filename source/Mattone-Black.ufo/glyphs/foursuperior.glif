@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="foursuperior" format="2">
+  <advance width="663"/>
+  <unicode hex="2074"/>
+  <outline>
+    <contour>
+      <point x="23" y="467" type="line"/>
+      <point x="356" y="467" type="line"/>
+      <point x="356" y="397" type="line"/>
+      <point x="558" y="397" type="line"/>
+      <point x="558" y="475" type="line"/>
+      <point x="640" y="475" type="line"/>
+      <point x="640" y="620" type="line"/>
+      <point x="558" y="620" type="line"/>
+      <point x="558" y="855" type="line"/>
+      <point x="228" y="855" type="line"/>
+      <point x="23" y="606" type="line"/>
+    </contour>
+    <contour>
+      <point x="235" y="602" type="line"/>
+      <point x="356" y="751" type="line"/>
+      <point x="356" y="602" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.leftMetricsKey</key>
+      <string>four</string>
+      <key>com.schriftgestaltung.Glyphs.rightMetricsKey</key>
+      <string>four</string>
+    </dict>
+  </lib>
+</glyph>

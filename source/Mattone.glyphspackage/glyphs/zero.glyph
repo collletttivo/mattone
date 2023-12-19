@@ -170,6 +170,8 @@ width = 976;
 );
 metricLeft = O;
 metricRight = O;
-note = "\012zero\012";
+note = "
+zero
+";
 unicode = 48;
 }

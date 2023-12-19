@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="micro" format="2">
+  <advance width="711"/>
+  <unicode hex="00B5"/>
+  <anchor x="849" y="0" name="bottom"/>
+  <anchor x="921" y="7" name="ogonek"/>
+  <anchor x="849" y="560" name="top"/>
+  <outline>
+    <contour>
+      <point x="57" y="401" type="line"/>
+      <point x="57" y="-245" type="line"/>
+      <point x="207" y="-245" type="line"/>
+      <point x="207" y="401" type="line"/>
+    </contour>
+    <component base="u"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.leftMetricsKey</key>
+      <string>u</string>
+      <key>com.schriftgestaltung.Glyphs.rightMetricsKey</key>
+      <string>u</string>
+    </dict>
+  </lib>
+</glyph>

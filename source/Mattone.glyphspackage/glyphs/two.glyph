@@ -410,6 +410,8 @@ nodes = (
 width = 840;
 }
 );
-note = "\012two\012";
+note = "
+two
+";
 unicode = 50;
 }

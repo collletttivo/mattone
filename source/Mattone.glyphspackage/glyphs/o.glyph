@@ -170,6 +170,8 @@ nodes = (
 width = 827;
 }
 );
-note = "\012t\012";
+note = "
+t
+";
 unicode = 111;
 }

@@ -99,6 +99,8 @@ width = 675;
 }
 );
 metricRight = H;
-note = "\012one\012";
+note = "
+one
+";
 unicode = 49;
 }

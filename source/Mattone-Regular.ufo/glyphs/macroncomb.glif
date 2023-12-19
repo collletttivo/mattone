@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="macroncomb" format="2">
+  <advance width="538"/>
+  <unicode hex="0304"/>
+  <anchor x="269" y="560" name="_top"/>
+  <anchor x="269" y="750" name="top"/>
+  <outline>
+    <contour>
+      <point x="60" y="750" type="line"/>
+      <point x="60" y="645" type="line"/>
+      <point x="478" y="645" type="line"/>
+      <point x="478" y="750" type="line"/>
+    </contour>
+  </outline>
+</glyph>

@@ -82,6 +82,8 @@ nodes = (
 width = 865;
 }
 );
-note = "\012seven\012";
+note = "
+seven
+";
 unicode = 55;
 }

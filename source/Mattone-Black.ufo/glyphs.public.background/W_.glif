@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="W" format="2">
+  <advance width="1446"/>
+  <outline>
+    <contour>
+      <point x="361" y="750" type="line"/>
+      <point x="-2" y="750" type="line"/>
+      <point x="339" y="0" type="line"/>
+      <point x="738" y="0" type="line"/>
+      <point x="1068" y="750" type="line"/>
+      <point x="729" y="750" type="line"/>
+      <point x="484" y="80" type="line"/>
+      <point x="614" y="80" type="line"/>
+    </contour>
+  </outline>
+</glyph>

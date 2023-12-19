@@ -254,6 +254,8 @@ nodes = (
 width = 941;
 }
 );
-note = "\012five\012";
+note = "
+five
+";
 unicode = 53;
 }

@@ -217,6 +217,8 @@ nodes = (
 width = 971;
 }
 );
-note = "\012nine\012";
+note = "
+nine
+";
 unicode = 57;
 }

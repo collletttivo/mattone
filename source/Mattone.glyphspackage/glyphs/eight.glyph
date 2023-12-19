@@ -555,6 +555,8 @@ nodes = (
 width = 1020;
 }
 );
-note = "\012eight\012";
+note = "
+eight
+";
 unicode = 56;
 }

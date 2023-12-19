@@ -204,6 +204,8 @@ nodes = (
 width = 1025;
 }
 );
-note = "\012four\012";
+note = "
+four
+";
 unicode = 52;
 }

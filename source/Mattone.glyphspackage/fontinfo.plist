@@ -1,5 +1,5 @@
 {
-.appVersion = "3151";
+.appVersion = "3217";
 .formatVersion = 3;
 axes = (
 {
@@ -10,7 +10,7 @@ tag = wght;
 classes = (
 {
 automatic = 1;
-code = "A Aacute Abreve Acaron Acircumflex Adieresis Agrave Amacron Aogonek Aring Atilde AE B C Cacute Ccaron Ccedilla Cdotaccent D Eth Dcaron Dcroat E Eacute Ecaron Ecircumflex Edieresis Edotaccent Egrave Emacron Eogonek Etilde Schwa F G Gbreve Gcommaaccent Gdotaccent Gmacron H Hbar I IJ Iacute Icaron Icircumflex Idieresis Idotaccent Igrave Imacron Iogonek Itilde J Jacute K Kcommaaccent L Lacute Lcaron Lcommaaccent Lslash M N Nacute Ncaron Ncommaaccent Ntilde O Oacute Ocaron Ocircumflex Odieresis Ograve Ohungarumlaut Omacron Oslash Otilde OE P Thorn Q R Racute Rcaron Rcommaaccent S Sacute Scaron Scedilla Scommaaccent Germandbls T Tcaron Tcedilla Tcommaaccent U Uacute Ucaron Ucircumflex Udieresis Ugrave Uhungarumlaut Umacron Uogonek Uring Utilde V W Wacute Wcircumflex Wdieresis Wgrave X Y Yacute Ycircumflex Ydieresis Ygrave Ytilde Z Zacute Zcaron Zdotaccent Lcommaaccent.loclMAH Ncommaaccent.loclMAH I.ss01 IJ.ss01 Iacute.ss01 Icircumflex.ss01 Idieresis.ss01 Idotaccent.ss01 Igrave.ss01 Imacron.ss01 Iogonek.ss01 Itilde.ss01 Q.ss01";
+code = "A Aacute Abreve Acaron Acircumflex Adieresis Agrave Amacron Aogonek Aring Atilde AE B C Cacute Ccaron Ccedilla Cdotaccent D Dcaron Dcroat Eth E Eacute Ecaron Ecircumflex Edieresis Edotaccent Egrave Emacron Eogonek Etilde Schwa F G Gbreve Gcommaaccent Gdotaccent Gmacron H Hbar I IJ Iacute Icaron Icircumflex Idieresis Idotaccent Igrave Imacron Iogonek Itilde J Jacute K Kcommaaccent L Lacute Lcaron Lcommaaccent Lslash M N Nacute Ncaron Ncommaaccent Ntilde O Oacute Ocaron Ocircumflex Odieresis Ograve Ohungarumlaut Omacron Oslash Otilde OE P Thorn Q R Racute Rcaron Rcommaaccent S Sacute Scaron Scedilla Scommaaccent Germandbls T Tcaron Tcedilla Tcommaaccent U Uacute Ucaron Ucircumflex Udieresis Ugrave Uhungarumlaut Umacron Uogonek Uring Utilde V W Wacute Wcircumflex Wdieresis Wgrave X Y Yacute Ycircumflex Ydieresis Ygrave Ytilde Z Zacute Zcaron Zdotaccent Lcommaaccent.loclMAH Ncommaaccent.loclMAH I.ss01 IJ.ss01 Iacute.ss01 Icircumflex.ss01 Idieresis.ss01 Idotaccent.ss01 Igrave.ss01 Imacron.ss01 Iogonek.ss01 Itilde.ss01 Q.ss01";
 name = Uppercase;
 }
 );
@@ -78,19 +78,22 @@ tag = aalt;
 automatic = 1;
 code = "lookup ccmp_Other_1 {
 	@CombiningTopAccents = [acutecomb brevecomb caroncomb circumflexcomb commaturnedabovecomb dieresiscomb dotaccentcomb gravecomb hungarumlautcomb macroncomb ringcomb tildecomb];
-	@CombiningNonTopAccents = [cedillacomb dotbelowcomb ogonekcomb];
-	sub [i j]' @CombiningTopAccents by [idotless jdotless];
-	sub [i j]' @CombiningNonTopAccents @CombiningTopAccents by [idotless jdotless];
+	lookupflag UseMarkFilteringSet @CombiningTopAccents;
+	sub i' @CombiningTopAccents by idotless;
+	sub j' @CombiningTopAccents by jdotless;
+} ccmp_Other_1;
+
+lookup ccmp_Other_2 {
 	@Markscomb = [dieresiscomb dotaccentcomb gravecomb acutecomb hungarumlautcomb circumflexcomb caroncomb brevecomb ringcomb tildecomb macroncomb];
 	@MarkscombCase = [dieresiscomb.case dotaccentcomb.case gravecomb.case acutecomb.case hungarumlautcomb.case circumflexcomb.case caroncomb.case brevecomb.case ringcomb.case tildecomb.case macroncomb.case];
 	sub @Markscomb @Markscomb' by @MarkscombCase;
 	sub @Uppercase @Markscomb' by @MarkscombCase;
-} ccmp_Other_1;
+} ccmp_Other_2;
 
-lookup ccmp_Other_2 {
+lookup ccmp_Other_3 {
 	sub @Markscomb' @MarkscombCase by @MarkscombCase;
 	sub @MarkscombCase @Markscomb' by @MarkscombCase;
-} ccmp_Other_2;
+} ccmp_Other_3;
 
 lookup ccmp_latn_1 {
 	sub fi by f i;
@@ -104,46 +107,43 @@ tag = ccmp;
 },
 {
 automatic = 1;
-code = "lookup locl_latn_0 {
-	script latn;
-	language AZE;
-	sub i by idotaccent;
-	language CRT;
-	sub i by idotaccent;
-	language KAZ;
-	sub i by idotaccent;
-	language TAT;
-	sub i by idotaccent;
-	language TRK;
+code = "script latn;
+language AZE;
+lookup locl_latn_0 {
 	sub i by idotaccent;
 } locl_latn_0;
+language CRT;
+lookup locl_latn_0;
+language KAZ;
+lookup locl_latn_0;
+language TAT;
+lookup locl_latn_0;
+language TRK;
+lookup locl_latn_0;
 
+script latn;
+language ROM;
 lookup locl_latn_1 {
-	script latn;
-	language ROM;
-	sub Scedilla by Scommaaccent;
-	sub scedilla by scommaaccent;
-	sub Tcedilla by Tcommaaccent;
-	sub tcedilla by tcommaaccent;
-	language MOL;
 	sub Scedilla by Scommaaccent;
 	sub scedilla by scommaaccent;
 	sub Tcedilla by Tcommaaccent;
 	sub tcedilla by tcommaaccent;
 } locl_latn_1;
+language MOL;
+lookup locl_latn_1;
 
+script latn;
+language MAH;
 lookup locl_latn_2 {
-	script latn;
-	language MAH;
 	sub Lcommaaccent by Lcommaaccent.loclMAH;
 	sub Ncommaaccent by Ncommaaccent.loclMAH;
 	sub lcommaaccent by lcommaaccent.loclMAH;
 	sub ncommaaccent by ncommaaccent.loclMAH;
 } locl_latn_2;
 
+script latn;
+language NLD;
 lookup locl_latn_3 {
-	script latn;
-	language NLD;
 	sub iacute j' by jacute;
 	sub Iacute J' by Jacute;
 } locl_latn_3;
@@ -201,8 +201,8 @@ tag = dlig;
 {
 automatic = 1;
 code = "lookupflag IgnoreMarks;
-sub f i by fi;
-sub f l by fl;
+sub f i by f_i;
+sub f l by f_l;
 ";
 tag = liga;
 },
@@ -258,35 +258,35 @@ axesValues = (
 customParameters = (
 {
 name = hheaAscender;
-value = 1044;
+value = 1090;
 },
 {
 name = hheaDescender;
-value = -312;
+value = -340;
 },
 {
 name = hheaLineGap;
-value = 0;
+value = 150;
 },
 {
 name = typoAscender;
-value = 1044;
+value = 1090;
 },
 {
 name = typoDescender;
-value = -312;
+value = -340;
 },
 {
 name = typoLineGap;
-value = 0;
+value = 150;
 },
 {
 name = winAscent;
-value = 1044;
+value = 1090;
 },
 {
 name = winDescent;
-value = 312;
+value = 365;
 }
 );
 guides = (
@@ -323,7 +323,7 @@ over = 17;
 pos = 750;
 },
 {
-over = 21;
+over = 17;
 pos = 560;
 },
 {
@@ -360,11 +360,11 @@ value = 1090;
 },
 {
 name = hheaDescender;
-value = -365;
+value = -340;
 },
 {
 name = hheaLineGap;
-value = 0;
+value = 150;
 },
 {
 name = typoAscender;
@@ -372,11 +372,11 @@ value = 1090;
 },
 {
 name = typoDescender;
-value = -365;
+value = -340;
 },
 {
 name = typoLineGap;
-value = 0;
+value = 150;
 },
 {
 name = winAscent;
@@ -406,7 +406,7 @@ pos = 570;
 over = -25;
 },
 {
-over = -30;
+over = -20;
 pos = -230;
 },
 {
@@ -924,10 +924,6 @@ value = "Nunzio Mazzaferro";
 );
 },
 {
-key = designerURL;
-value = "https://collletttivo.it";
-},
-{
 key = manufacturers;
 values = (
 {
@@ -938,7 +934,7 @@ value = Collletttivo;
 },
 {
 key = manufacturerURL;
-value = "https://collletttivo.it";
+value = "https://www.collletttivo.it";
 },
 {
 key = vendorID;

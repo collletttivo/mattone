@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="i" format="2">
+  <advance width="382"/>
+  <unicode hex="0069"/>
+  <anchor x="185" y="0" name="bottom"/>
+  <outline>
+    <component base="idotless"/>
+    <component base="dotaccentcomb" xScale="1.1" yScale="0.9" xOffset="-180" yOffset="89"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.leftMetricsKey</key>
+      <string>n</string>
+    </dict>
+  </lib>
+</glyph>

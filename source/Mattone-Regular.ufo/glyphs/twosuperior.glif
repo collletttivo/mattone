@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="twosuperior" format="2">
+  <advance width="521"/>
+  <unicode hex="00B2"/>
+  <outline>
+    <contour>
+      <point x="50" y="300" type="line"/>
+      <point x="468" y="300" type="line"/>
+      <point x="468" y="395" type="line"/>
+      <point x="124" y="385" type="line"/>
+      <point x="124" y="373" type="line"/>
+      <point x="344" y="416"/>
+      <point x="459" y="502"/>
+      <point x="459" y="617" type="curve" smooth="yes"/>
+      <point x="459" y="709"/>
+      <point x="382" y="764"/>
+      <point x="246" y="764" type="curve" smooth="yes"/>
+      <point x="191" y="764"/>
+      <point x="124" y="756"/>
+      <point x="64" y="732" type="curve"/>
+      <point x="64" y="641" type="line"/>
+      <point x="114" y="662"/>
+      <point x="177" y="672"/>
+      <point x="225" y="672" type="curve" smooth="yes"/>
+      <point x="297" y="672"/>
+      <point x="340" y="648"/>
+      <point x="340" y="599" type="curve" smooth="yes"/>
+      <point x="340" y="539"/>
+      <point x="284" y="497"/>
+      <point x="50" y="400" type="curve"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.leftMetricsKey</key>
+      <string>two</string>
+      <key>com.schriftgestaltung.Glyphs.rightMetricsKey</key>
+      <string>two</string>
+    </dict>
+  </lib>
+</glyph>

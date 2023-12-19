@@ -280,6 +280,8 @@ nodes = (
 width = 895;
 }
 );
-note = "\012three\012";
+note = "
+three
+";
 unicode = 51;
 }

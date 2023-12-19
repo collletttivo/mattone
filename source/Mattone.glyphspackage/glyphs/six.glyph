@@ -272,6 +272,8 @@ nodes = (
 width = 971;
 }
 );
-note = "\012six\012";
+note = "
+six
+";
 unicode = 54;
 }
