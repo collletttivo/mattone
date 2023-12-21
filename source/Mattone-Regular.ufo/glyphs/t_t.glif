@@ -2,7 +2,7 @@
 <glyph name="t_t" format="2">
   <advance width="1097"/>
   <outline>
-    <component base="t" identifier="C7736766"/>
+    <component base="t" identifier="5717B893"/>
     <component base="t" xOffset="490"/>
   </outline>
   <lib>
@@ -13,7 +13,7 @@
       <string>t</string>
       <key>public.objectLibs</key>
       <dict>
-        <key>C7736766</key>
+        <key>5717B893</key>
         <dict>
           <key>com.schriftgestaltung.alignment</key>
           <integer>-1</integer>

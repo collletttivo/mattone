@@ -910,7 +910,7 @@ key = copyrights;
 values = (
 {
 language = dflt;
-value = "© Nunzio Mazzaferro and Collletttivo, 2022";
+value = "© 2022, Nunzio Mazzaferro and Collletttivo";
 }
 );
 },

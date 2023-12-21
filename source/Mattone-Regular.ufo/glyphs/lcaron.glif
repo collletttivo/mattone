@@ -3,19 +3,19 @@
   <advance width="410"/>
   <unicode hex="013E"/>
   <outline>
-    <component base="l" identifier="15705E70"/>
-    <component base="caroncomb.alt" xOffset="190" yOffset="16" identifier="93386907"/>
+    <component base="l" identifier="0A9C2ADD"/>
+    <component base="caroncomb.alt" xOffset="190" yOffset="16" identifier="FC130BEA"/>
   </outline>
   <lib>
     <dict>
       <key>public.objectLibs</key>
       <dict>
-        <key>15705E70</key>
+        <key>0A9C2ADD</key>
         <dict>
           <key>com.schriftgestaltung.alignment</key>
           <integer>-1</integer>
         </dict>
-        <key>93386907</key>
+        <key>FC130BEA</key>
         <dict>
           <key>com.schriftgestaltung.alignment</key>
           <integer>-1</integer>

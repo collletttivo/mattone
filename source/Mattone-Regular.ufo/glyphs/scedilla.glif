@@ -4,13 +4,13 @@
   <unicode hex="015F"/>
   <outline>
     <component base="s"/>
-    <component base="cedillacomb" xOffset="100" yOffset="20" identifier="FE850DD8"/>
+    <component base="cedillacomb" xOffset="100" yOffset="20" identifier="7D0DEBE3"/>
   </outline>
   <lib>
     <dict>
       <key>public.objectLibs</key>
       <dict>
-        <key>FE850DD8</key>
+        <key>7D0DEBE3</key>
         <dict>
           <key>com.schriftgestaltung.locked</key>
           <true/>
